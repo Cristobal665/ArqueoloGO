@@ -1,0 +1,117 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8;
+    color: #ffffff;
+    background-color: #A55F20;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    padding: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 3em;
+    font-weight: 700;
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #e74c3c;
+    transform: translateY(-2px);
+}
+
+/* Button Styles */
+.button-external {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.button-external:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Corner Logo */
+.corner-logo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url('robot_naranjo CON OJO.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    padding-right: 160px;
+}
+
+/* Discovery Cards */
+.discovery-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.discovery-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.discovery-card:hover {
+    transform: translateY(-10px);
+}
+
+.discovery-card img {
+    border-radius: 12px 12px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .discovery-grid {
+        grid-template-columns: 1fr;
+    }
+}

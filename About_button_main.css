@@ -1,0 +1,18 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #A55F20
+    
+}
+.button-external {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
